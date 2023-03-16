@@ -8,23 +8,23 @@ const Login = () => {
     console.log(data)
     }
     return (
-    <section>
-        <form className='form' onSubmit={handleSubmit(onSubmit)}>
-            <label className='label' >
+    <section className='p-5'>
+        <form className='form flex flex-col gap-5 items-center' onSubmit={handleSubmit(onSubmit)}>
+            <label className='flex flex-col gap-3 ' >
                 <span>
                 Usuario
                 </span>
-                <input type="text" placeholder='Nombre de usuario' {...register('name',{required: 'Nombre requerido'})} />
+                <input className='border-2 p-2 rounded-md' type="text" placeholder='Nombre de usuario' {...register('name',{required: 'Nombre requerido'})} />
             </label>
-            {errors.name ? <span>{errors.name.message}</span> : <></>}
-            <label className='label'>
+            {errors.name ? <span className='text-red-500'>{errors.name.message}</span> : <></>}
+            <label  className='flex flex-col gap-3 '>
                 <span>
                 Constraseña
                 </span>
-                <input type="password" placeholder='Contraseña' {...register('password',{required: 'Contraseña requerida'})}/>
+                <input className='border-2 p-2 rounded-md' type="password" placeholder='Contraseña' {...register('password',{required: 'Contraseña requerida'})}/>
             </label>
-            {errors.password ? <span>{errors.password.message}</span> : <></>}
-            <button type='submit'>Iniciar sesion</button>
+            {errors.password ? <span className='text-red-500'>{errors.password.message}</span> : <></>}
+            <button className='bg-blue-300 p-3 rounded-md' type='submit'>Iniciar sesion</button>
         </form>
 
     </section>
