@@ -40,6 +40,12 @@ const Login = () => {
         </form>
         {error.status ? <span className=' bg-red-300 p-2  m-5 text-white'>{error.message}</span> : <></>}
         <h3>¿No tienes un usuario? Puedes <Link to='/register' className='text-blue-500'>Crear uno</Link></h3>
+        <div>
+            <span>Accerder con: </span> <br/>
+            <Link className='text-blue-500' to='/verifyphone'>
+            Número de telefono
+            </Link>
+        </div>
     </section>
   )
 }
