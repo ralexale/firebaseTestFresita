@@ -1,14 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from 'firebase/auth'
+import { getAuth } from "firebase/auth";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAqxIfnbryRFV0t7lHwyhEofDp3bDVHR9w",
-  authDomain: "finanzasredux.firebaseapp.com",
-  projectId: "finanzasredux",
-  storageBucket: "finanzasredux.appspot.com",
-  messagingSenderId: "102234010694",
-  appId: "1:102234010694:web:827ac903f10878dd2f8647"
+    apiKey: "AIzaSyAhPOxs6hKuoddn-V7Bmt2KIW2gjqMI_Hg",
+    authDomain: "fir-test-2-b1fa2.firebaseapp.com",
+    projectId: "fir-test-2-b1fa2",
+    storageBucket: "fir-test-2-b1fa2.appspot.com",
+    messagingSenderId: "1027407705065",
+    appId: "1:1027407705065:web:9d80c360e10859b14f9178",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);

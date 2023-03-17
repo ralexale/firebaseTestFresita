@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.11",
     "@reduxjs/toolkit": "^1.9.3",
     "firebase": "^9.17.2",
     "react": "^18.2.0",
@@ -17,7 +18,9 @@
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.9.0",
-    "sass": "^1.59.3"
+    "sass": "^1.59.3",
+    "sweetalert2": "^11.7.3",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
